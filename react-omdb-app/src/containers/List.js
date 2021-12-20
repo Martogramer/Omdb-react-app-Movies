@@ -18,7 +18,7 @@ class List extends React.Component {
     async componentDidMount() {                  // ejecuta apenas renderiza, para solicitar los datos con fetch
         //const res = await fetch('../../assets/data.json')   // con await para que se ejecute asincronicamente
         
-        const res = await fetch(`${API}&s=batman`)
+        const res = await fetch(`${API}&s=matrix`)
         const resJSON = await res.json()                   // resumen: lo que hace este componente es q apenas carga List, trae los datos  
         this.setState({data: resJSON.Search})                           //Una vez trae la Data la muestra acá
     }
